@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSOR DE MOEDAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <HEAder>CONVERSOR DE MOEDAS</HEAder>
+    <h1>Esse site é para converter o valor em real</h1>
+    <p id="cc">Digite o valor <input type="number" name="va" id="va"></p>
+    
+    <p>Escolha a moeda desejada</p>
+
+   <p><input type="button" value="DOLAR" onclick="ir()"> <input type="button" value="EURO" onclick="vai()"> <input type="button" value="LIBRA" onclick="go()"> </p>
+    <div id="res"> resultado</div>
+
+    <script>
+        function ir(){
+            var re = window.document.getElementById('va')
+            var res = window.document.getElementById('res')
+            var rea =Number(re.value)
+            var Do = 5.25
+            var con = (rea / Do).toFixed(2)
+            res.innerHTML = (`O valor em reais é ${con}`)
+
+        }
+    </script>
+
+
+<script>
+    function vai(){
+        var re = window.document.getElementById('va')
+        var res = window.document.getElementById('res')
+        var rea =Number(re.value)
+        var Do = 5.20
+        var con = (rea / Do).toFixed(2)
+        res.innerHTML = (`O valor em reais é ${con}`)
+
+    }
+</script>
+
+<script>
+    function go(){
+        var re = window.document.getElementById('va')
+        var res = window.document.getElementById('res')
+        var rea =Number(re.value)
+        var Do = 6.04
+        var con = (rea / Do).toFixed(2)
+        res.innerHTML = (`O valor em reais é ${con}`)
+
+    }
+</script>
+    
+    <footer><p>&copy;FelipeDeveloper</p></footer>
+</body>
+</html>
